@@ -112,18 +112,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script>
-    const box1 = document.querySelector('#section1 .parallax__item__img');
-    const box2 = document.querySelector('#section2 .parallax__item__img');
-    const box3 = document.querySelector('#section3 .parallax__item__img');
-    const box4 = document.querySelector('#section4 .parallax__item__img');
-    const box5 = document.querySelector('#section5 .parallax__item__img');
-    const box6 = document.querySelector('#section6 .parallax__item__img');
-    const box7 = document.querySelector('#section7 .parallax__item__img');
-    const box8 = document.querySelector('#section8 .parallax__item__img');
-    const box9 = document.querySelector('#section9 .parallax__item__img');
-
     ScrollTrigger.create({
-
+        trigger: '#section1',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+        pin: true,
+        anticipatePin: 1, // pin 효과를 좀 더 자연스럽게 연출해주는 기능
+        markers: true,
     });
   </script>
 </body>
